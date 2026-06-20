@@ -37,7 +37,7 @@ def init_db():
 def log_activity(action):
         timestamp= datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         log_line= f"[{timestamp}] {action}\n" 
-        with open("activity_log.txt","a") as file:
+        with open("activity_log.log","a") as file:
             file.write(log_line)
          
 def login_user():
